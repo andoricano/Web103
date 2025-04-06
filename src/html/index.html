@@ -19,27 +19,82 @@
     .utility_bar {
       background-color: #423;
     }
+    main {
+      background-color: cyan;
+    }
+    section{
+        background-color: purple;
+    }
+    article{
+        background-color: antiquewhite;
+    }
+    footer{
+        background-color: skyblue;
+    }
     </style>
 </head>
 <body>
     <header>
-        <h1>ANDO</h1>
-
-        <ul class="navigation_bar">
-            <li>DEPARTMENT</li>
-            <li>GALLERY</li>
-            <li>YOUTUBE</li>
-            <li>COMMUNITY</li>
-            <li>LOCATION</li>
-        </ul>
-        <ul class="utility_bar">
-            <li>Contact</li>
-            <li>Help</li>
-            <li>Login</li>
-            <li>Join</li>
-            <li>Sitemap</li>
-        </ul>
-        
+        <div>
+            <h1>ANDO</h1>
+    
+            <!-- TODO : Emmet 적용해볼 것 -->
+            <ul class="navigation_bar">
+                <li>DEPARTMENT</li><li>GALLERY</li><li>YOUTUBE</li><li>COMMUNITY</li><li>LOCATION</li>
+            </ul>
+            <ul class="utility_bar">
+                <li>Contact</li><li>Help</li><li>Login</li><li>Join</li><li>Sitemap</li>
+            </ul>
+        </div>
     </header>
+    
+    <main>
+        <div>
+            <p class="main_title"></p>
+            <p class="main_content"></p>
+        </div>
+    </main>
+
+    <!-- Emmet Code 적용 검토 -->
+    <section>
+        <div>
+            <p>RECENT NEWS</p>
+            <article>
+                <img>
+                <p>X-mas</p>
+                <p>X-mas is a common abbreviation of the world Christmas</p>
+            </article>
+            <article>
+                <img>
+                <p>Bell</p>
+                <p>a hollow metal object shaped like a cup</p>
+            </article>
+            <article>
+                <img>
+                <p>Bear</p>
+                <p>a large, strong wild mammal with a thick fur coat that lives especially in colder parts of Europe, Asia, and North America</p>
+            </article>
+            <article>
+                <img>
+                <p>Socks</p>
+                <p>a piece of clothing made from soft material that covers your foot and the lower part of your leg</p>
+            </article>
+            
+        </div>
+    </section>
+
+    <footer>
+        <!-- 이거 div내에 p넣는건지 확인해야하고, br 때려박는 것보다 list가 더 예쁘지 않을까? -->
+        <div>
+            <h1>WON LAB</h1>
+            <ul><li>@ 1997-2025 WON Lab, Inc</li> | <li>Privacy Notice</li> | <li>Term of Use</li> | <li>Site map</li></ul>
+        </div>
+        <p>
+            45, Hwangsaeul-ro 200beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea<br>
+            Tel : 031-000-1111<br>
+            Fax : 031-000-0000<br>
+            Contact : wonlab@naver.com<br>
+        </p>
+    </footer>
 </body>
 </html>
