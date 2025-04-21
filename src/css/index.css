@@ -3,8 +3,30 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+li {
+    float: left;
+}
+
 ul{
     list-style-type: none;
+}
+
+div h1 {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    margin: 0 auto;
+}
+
+ul{
+    position: absolute;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(82, 77, 77);
 }
 
 /* -----------------------------header-----------------------------*/
@@ -20,20 +42,7 @@ header div {
     margin: 0 auto;
 }
 
-header div h1 {
-    position: absolute;
-    left: 10px;
-    bottom: 15px;
-    margin: 0 auto;
-}
-
-header li {
-    float: left;
-}
-
 .global_navigation_bar {
-    position: absolute;
-    display: inline-block;
     right: 0px;
     bottom: 0px;
     font-size: 20px;
@@ -54,8 +63,6 @@ header li {
 }
 
 .utility_bar {
-    position: absolute;
-    display: inline-block;
     right: 30px;
     top: 20px;
     font-size: 11px;
@@ -64,10 +71,6 @@ header li {
 
 .utility_bar li {
     margin: 0px 14px 0px 14px;
-}
-.utility_bar li a {
-    text-decoration: none;
-    color: rgb(82, 77, 77);
 }
 
 /* -----------------------------main-----------------------------*/
@@ -95,6 +98,8 @@ main div{
     margin: 0px;
 }
 
+/* -----------------------------section-----------------------------*/
+
 section {
     width: 100%;
 }
@@ -102,6 +107,7 @@ section {
 section div{
     width: 1080px;
     height: 450px;
+    margin: 0 auto;
 }
 .section_title {
     margin: 50px auto;
@@ -125,5 +131,45 @@ article p:first-of-type {
     font-weight: 1000;
   }
 
+/* -----------------------------footer-----------------------------*/
+footer {
+    width: 100%;
+    background-color: rgb(1, 1, 49);
+    color: gray;
+}
 
-  /* 컴파일 -> c -> 메모리 -> 프로세스 그대로 */
+footer div {
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+footer p{
+    display: block;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+.footer_menu_bar{
+    font-size: 13px;
+    right: 20px;
+    bottom: 15px;
+}
+.footer_menu_bar a {
+    color: aliceblue;  /* a 태그에 명시적으로 색상 적용 */
+    text-decoration: none; /* 링크에 밑줄 제거 (선택적) */
+}
+.footer_menu_bar li {
+    display: inline-block;
+    padding:  0 15px 0 15px; /* 항목과 | 사이의 간격 */
+    border-right: 2px solid aliceblue; /* 항목 사이에 | 추가 */
+}
+
+.footer_menu_bar li:last-child {
+    border-right: none; /* 마지막 항목에는 | 제거 */
+}
