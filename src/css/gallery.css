@@ -1,0 +1,81 @@
+/* -----------------------------common-----------------------------*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
+/* -----------------------------header-----------------------------*/
+
+header {
+    width: 100%;
+    position: fixed;
+    background: white;
+    border-bottom: 2px solid black;
+}
+
+header div {
+    position: relative;
+    width: 1180px;
+    height: 120px;
+}
+
+.global_navigation_bar {
+    right: 0px;
+    bottom: 0px;
+    font-size: 20px;
+    padding-right: 16px;
+    margin-bottom: 15px;
+}
+.global_navigation_bar li {
+    margin: 0px 30px 0px 30px;
+}
+
+.global_navigation_bar li a {
+    font-weight: 1000;
+    color: rgb(82, 77, 77);
+}
+
+.global_navigation_bar li a:hover {
+    color: rgb(104, 107, 159);
+}
+
+.utility_bar {
+    right: 30px;
+    top: 20px;
+    font-size: 11px;
+}
+
+.utility_bar li {
+    margin: 0px 14px 0px 14px;
+}
+
+
+
+li {
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+}
+
+div h1 {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+ul{
+    position: absolute;
+    display: inline-block;
+}
+
+li a {
+    color: rgb(82, 77, 77);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(82, 77, 77);
+}
+
+/* -----------------------------section-----------------------------*/
