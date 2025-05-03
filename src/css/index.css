@@ -1,27 +1,17 @@
 /* -----------------------------common-----------------------------*/
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
 }
-
 
 li {
     float: left;
 }
 
 ul{
-    list-style-type: none;
-}
-
-div h1 {
-    position: absolute;
-    left: 10px;
-    bottom: 15px;
-    margin: 0 auto;
-}
-
-ul{
     position: absolute;
     display: inline-block;
+    list-style-type: none;
 }
 
 li a {
@@ -29,17 +19,23 @@ li a {
     color: rgb(82, 77, 77);
 }
 
-/* -----------------------------header-----------------------------*/
-
-header {
+/* -----------------------------body-----------------------------*/
+body>*{
     width: 100%;
 }
 
+/* -----------------------------header-----------------------------*/
+/* 헤더는 class 이름으로 관리. */
 header div {
     position: relative;
     width: 1180px;
     height: 120px;
-    margin: 0 auto;
+}
+
+header h1 {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
 }
 
 .global_navigation_bar {
@@ -48,17 +44,17 @@ header div {
     font-size: 20px;
     padding-right: 16px;
 }
-.global_navigation_bar li {
-    margin: 0px 30px 0px 30px;
+.global_navigation_bar>li {
+    margin: 0px 30px 15px;
 }
 
-.global_navigation_bar li a {
+.global_navigation_bar>li>a {
     text-decoration: none;
     font-weight: 1000;
     color: rgb(82, 77, 77);
 }
 
-.global_navigation_bar li a:hover {
+.global_navigation_bar>li>a:hover {
     color: rgb(104, 107, 159);
 }
 
@@ -70,46 +66,40 @@ header div {
 }
 
 .utility_bar li {
-    margin: 0px 14px 0px 14px;
+    margin: 0px 14px;
 }
 
 /* -----------------------------main-----------------------------*/
+/* main은 상속 관계로 관리 */
 main{
-    width: 100%;
     height: 590px;
-
 }
 main div{
     width: 800px;
     height: 300px;
     margin: 0 auto;
-    padding: 150px 0 0 0;
+    padding: 150px 0 0;
     color: white;
 }
 
-.main_title{
+main>div>p{
     font-size: 80px;
     margin: 0px;
     font-weight: 1000;
 }
 
-.main_content{
+main>div>p~p{
     font-size: 25px;
-    margin: 0px;
 }
 
 /* -----------------------------section-----------------------------*/
-
-section {
-    width: 100%;
-}
-
+/* section은 첫번째 상속받는 애로 관리*/
 section div{
     width: 1080px;
     height: 450px;
     margin: 0 auto;
 }
-.section_title {
+section>div>p {
     margin: 50px auto;
     text-align: center;
     font-size: 20px;
@@ -117,13 +107,13 @@ section div{
 }
 
 /* 230 * 4 + 40 * 4 = 1080 */
-section article {
+article {
     width: 230px;
     float: left;
     margin: 0px 20px 0px 20px;
 }
 
-section article img{
+article img{
     width: 230px;
     height: 163px;
 }
@@ -132,10 +122,18 @@ article p:first-of-type {
   }
 
 /* -----------------------------footer-----------------------------*/
+/* footer는 class로 관리 */
 footer {
-    width: 100%;
     background-color: rgb(1, 1, 49);
     color: gray;
+}
+
+footer h1{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    margin: 0 auto;
+
 }
 
 footer div {
@@ -161,15 +159,14 @@ footer p{
     bottom: 15px;
 }
 .footer_menu_bar a {
-    color: aliceblue;  /* a 태그에 명시적으로 색상 적용 */
-    text-decoration: none; /* 링크에 밑줄 제거 (선택적) */
+    color: aliceblue;
 }
 .footer_menu_bar li {
     display: inline-block;
-    padding:  0 15px 0 15px; /* 항목과 | 사이의 간격 */
-    border-right: 2px solid aliceblue; /* 항목 사이에 | 추가 */
+    padding:  0 15px;
+    border-right: 2px solid aliceblue;
 }
 
 .footer_menu_bar li:last-child {
-    border-right: none; /* 마지막 항목에는 | 제거 */
+    border-right: none;
 }
