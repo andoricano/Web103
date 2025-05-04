@@ -1,6 +1,6 @@
 # Web103
 
-## Recode 수업에서 진행하는 Web Portpolio 3번째 과정입니다.
+## Recode 수업에서 진행하는 Web Portfolio 3번째 과정입니다.
 => 해당 항목을 중점으로 진행합니다.
 - External style
 - Semantic Element
