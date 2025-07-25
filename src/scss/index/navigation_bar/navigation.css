@@ -1,0 +1,14 @@
+li {
+  float: left;
+}
+
+ul {
+  position: absolute;
+  display: inline-block;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(82, 77, 77);
+}/*# sourceMappingURL=navigation.css.map */

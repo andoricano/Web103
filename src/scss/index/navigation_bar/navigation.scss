@@ -1,0 +1,16 @@
+@import 'variables';
+
+li {
+    float: left;
+}
+
+ul{
+    position: absolute;
+    display: inline-block;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: $text-color;
+}
