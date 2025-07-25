@@ -1,6 +1,6 @@
 footer {
-  background-color: rgb(1, 1, 49);
-  color: gray;
+  background-color: $footer-bg-color;
+  color: $footer-list-font-color;
 
   h1 {
     position: absolute;
@@ -32,13 +32,18 @@ footer {
     bottom: 15px;
 
     a {
-      color: aliceblue;
+      color: $footer-list-font-color;
+
+      &:hover {
+        color: $footer-font-hover-color;
+        cursor: pointer;
+      }
     }
 
     li {
       display: inline-block;
       padding: 0 15px;
-      border-right: 2px solid aliceblue;
+      border-right: 2px solid $footer-bar-color;
 
       &:last-child {
         border-right: none;

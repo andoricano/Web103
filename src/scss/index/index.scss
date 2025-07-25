@@ -1,5 +1,8 @@
-@import '../common.css';
-@import 'navigation_bar/navigation.css';
-@import 'body/body.css';
-@import 'header/header.css';
-@import 'main/main.css';
+@import 'variables';
+@import '../common';
+@import 'navigation_bar/navigation';
+@import 'body/body';
+@import 'header/header';
+@import 'main/main';
+@import 'section/section';
+@import 'footer/footer';
