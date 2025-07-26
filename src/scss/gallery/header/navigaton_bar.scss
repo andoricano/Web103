@@ -1,0 +1,31 @@
+@import "../../index/variables.scss";
+@import "../../index/header/header.scss";
+@import "../../index/navigation_bar/navigation.scss";
+
+header {
+    width: 100%;
+    position: fixed;
+    background: white;
+    border-bottom: 2px solid black;
+    z-index: 1;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+}
+
+header div {
+    position: relative;
+    width: 1180px;
+    height: 120px;
+}

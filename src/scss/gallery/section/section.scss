@@ -1,0 +1,126 @@
+section {
+  padding: 130px 0 0 0;
+  width: 1000px;
+  font-size: 0;
+
+  article {
+    position: relative;
+    float: left;
+
+    p {
+      position: absolute;
+      color: white;
+      font-weight: 1000;
+    }
+  }
+
+  .article1 {
+    width: 700px;
+    margin-right: 5px;
+
+    p {
+      right: 10px;
+      bottom: 10px;
+      font-size: 30px;
+    }
+  }
+
+  .article2 {
+    width: 280px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: aqua;
+
+    p {
+      top: 50px;
+      left: 10px;
+      font-size: 30px;
+    }
+  }
+
+  .article3 {
+    width: 290px;
+    margin: 5px 0 5px 5px;
+
+    p {
+      right: 10px;
+      bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  .article_4_box {
+    width: 490px;
+    height: 500px;
+    margin-right: 5px;
+  }
+
+  .article4 {
+    width: 490px;
+    height: 240px;
+    margin: 5px 0;
+
+    .p1 {
+      position: absolute;
+      width: 300px;
+      top: 160px;
+      font-size: 14px;
+      text-align: start;
+      margin: 0 95px;
+      font-weight: 600;
+    }
+
+    .p2 {
+      position: absolute;
+      font-size: 30px;
+      text-align: start;
+      right: 20px;
+      bottom: 30px;
+      color: gold;
+      font-weight: 600;
+    }
+  }
+
+  .article5 {
+    margin: 5px 0 5px 5px;
+  }
+
+  .article6 {
+    width: 1000px;
+    height: 371px;
+    margin: 5px 0;
+    background-image: url("/rsc/1000x371.png");
+
+    p {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+      margin: 160px auto;
+      color: white;
+      text-shadow: 3px 10px 3px black;
+    }
+  }
+
+  .article7 {
+    margin: 5px 0 40px 0;
+
+    p {
+      width: 450px;
+      height: 150px;
+      right: 30px;
+      bottom: 40px;
+      position: absolute;
+      font-size: 20px;
+      color: white;
+
+      span {
+        display: inline;
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+      }
+    }
+  }
+}
