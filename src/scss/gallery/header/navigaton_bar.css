@@ -8,6 +8,16 @@ body > * {
   width: 100%;
 }
 
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 header div {
   position: relative;
   width: 1180px;
@@ -52,6 +62,16 @@ header h1 {
   margin: 0px 14px;
 }
 
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 li {
   float: left;
 }
@@ -69,7 +89,7 @@ li a {
 
 header {
   position: fixed;
-  background: white;
+  background: rgba(255, 255, 255, 0.1607843137);
   border-bottom: 2px solid black;
   z-index: 1;
 }
@@ -82,10 +102,4 @@ header h1 a:hover, header h1 a:focus, header h1 a:active, header h1 a:visited {
   text-decoration: none;
   outline: none;
   color: inherit;
-}
-
-header div {
-  position: relative;
-  width: 1180px;
-  height: 120px;
 }/*# sourceMappingURL=navigaton_bar.css.map */

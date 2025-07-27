@@ -1,3 +1,6 @@
+@import "../../common/common.scss";
+@import "../variables.scss";
+
 section {
   padding: 130px 0 0 0;
   width: 1000px;
@@ -9,7 +12,7 @@ section {
 
     p {
       position: absolute;
-      color: white;
+      color: map-get($map: $color, $key: section-base);
       font-weight: 1000;
     }
   }
@@ -29,7 +32,6 @@ section {
     width: 280px;
     margin-left: 5px;
     margin-bottom: 5px;
-    background-color: aqua;
 
     p {
       top: 50px;
@@ -76,7 +78,7 @@ section {
       text-align: start;
       right: 20px;
       bottom: 30px;
-      color: gold;
+      color: map-get($map: $color, $key:section-gold );
       font-weight: 600;
     }
   }
@@ -98,7 +100,7 @@ section {
       font-size: 50px;
       font-weight: 700;
       margin: 160px auto;
-      color: white;
+      color: map-get($map: $color, $key: section-base);
       text-shadow: 3px 10px 3px black;
     }
   }
@@ -113,13 +115,11 @@ section {
       bottom: 40px;
       position: absolute;
       font-size: 20px;
-      color: white;
 
       span {
         display: inline;
         font-size: 30px;
         font-weight: 700;
-        color: white;
       }
     }
   }
