@@ -62,6 +62,16 @@ header h1 {
   margin: 0px 14px;
 }
 
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 li {
   float: left;
 }
@@ -79,7 +89,7 @@ li a {
 
 header {
   position: fixed;
-  background: white;
+  background: rgba(255, 255, 255, 0.1607843137);
   border-bottom: 2px solid black;
   z-index: 1;
 }
@@ -94,10 +104,14 @@ header h1 a:hover, header h1 a:focus, header h1 a:active, header h1 a:visited {
   color: inherit;
 }
 
-header div {
-  position: relative;
-  width: 1180px;
-  height: 120px;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
 }
 
 section {
@@ -111,7 +125,7 @@ section article {
 }
 section article p {
   position: absolute;
-  color: white;
+  color: #ffffff;
   font-weight: 1000;
 }
 section .article1 {
@@ -127,7 +141,6 @@ section .article2 {
   width: 280px;
   margin-left: 5px;
   margin-bottom: 5px;
-  background-color: aqua;
 }
 section .article2 p {
   top: 50px;
@@ -187,7 +200,7 @@ section .article6 p {
   font-size: 50px;
   font-weight: 700;
   margin: 160px auto;
-  color: white;
+  color: #ffffff;
   text-shadow: 3px 10px 3px black;
 }
 section .article7 {
@@ -200,11 +213,9 @@ section .article7 p {
   bottom: 40px;
   position: absolute;
   font-size: 20px;
-  color: white;
 }
 section .article7 p span {
   display: inline;
   font-size: 30px;
   font-weight: 700;
-  color: white;
 }/*# sourceMappingURL=gallery.css.map */

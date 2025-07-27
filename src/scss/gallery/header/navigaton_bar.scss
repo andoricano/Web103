@@ -1,9 +1,11 @@
+@import "../../common/common.scss";
 @import "../../common/header/header.scss";
 @import "../../common/navigation_bar/navigation.scss";
+@import "../variables.scss";
 
 header {
     position: fixed;
-    background: white;
+    background: map-get($map: $color, $key: header-bg);
     border-bottom: 2px solid black;
     z-index: 1;
 }
@@ -20,10 +22,4 @@ header h1 a {
     outline: none;
     color: inherit;
   }
-}
-
-header div {
-    position: relative;
-    width: 1180px;
-    height: 120px;
 }
