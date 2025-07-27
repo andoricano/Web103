@@ -8,16 +8,6 @@ body > * {
   width: 100%;
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 header div {
   position: relative;
   width: 1180px;
@@ -62,6 +52,16 @@ header h1 {
   margin: 0px 14px;
 }
 
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 li {
   float: left;
 }
@@ -75,6 +75,16 @@ ul {
 li a {
   text-decoration: none;
   color: rgb(26, 22, 22);
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
 }
 
 main {
@@ -119,6 +129,16 @@ article img {
 }
 article p:first-of-type {
   font-weight: 1000;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
 }
 
 footer {

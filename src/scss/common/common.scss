@@ -1,7 +1,12 @@
-// --------------------common--------------------
+$color :(
+  base: rgb(0, 0, 0),
+  nav: rgb(26, 22, 22),
+  header-main: rgb(26, 22, 22),
+  header-deco: rgb(71, 173, 182)
+);
+
 
 $font-family-base: Verdana, Geneva, Tahoma, sans-serif;
-$font-color: rgb(82, 77, 77);
 
 * {
   font-family: $font-family-base;
@@ -12,15 +17,3 @@ $font-color: rgb(82, 77, 77);
 body>*{
     width: 100%;
 }
-// --------------------common--------------------
-
-
-// --------------------navigation--------------------
-$nav-font-color: rgb(26, 22, 22);
-// --------------------navigation--------------------
-
-
-// --------------------header--------------------
-$header-font-color: rgb(26, 22, 22);
-$header-font-deco-color: rgb(71, 173, 182);
-// --------------------header--------------------

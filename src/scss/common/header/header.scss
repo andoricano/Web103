@@ -25,11 +25,11 @@ header h1 {
 .global_navigation_bar>li>a {
     text-decoration: none;
     font-weight: 1000;
-    color: $header-font-color;
+    color: map-get($map: $color, $key: header-main);
 }
 
 .global_navigation_bar>li>a:hover {
-color: $header-font-deco-color;
+    color: map-get($map: $color, $key: header-deco);
 }
 
 .utility_bar {
