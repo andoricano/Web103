@@ -1,3 +1,13 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 header div {
   position: relative;
   width: 1180px;
@@ -58,7 +68,6 @@ li a {
 }
 
 header {
-  width: 100%;
   position: fixed;
   background: white;
   border-bottom: 2px solid black;

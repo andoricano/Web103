@@ -1,9 +1,7 @@
-@import "../../index/variables.scss";
-@import "../../index/header/header.scss";
-@import "../../index/navigation_bar/navigation.scss";
+@import "../../common/header/header.scss";
+@import "../../common/navigation_bar/navigation.scss";
 
 header {
-    width: 100%;
     position: fixed;
     background: white;
     border-bottom: 2px solid black;

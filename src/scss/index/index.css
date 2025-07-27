@@ -4,19 +4,14 @@
   padding: 0;
 }
 
-li {
-  float: left;
+body > * {
+  width: 100%;
 }
 
-ul {
-  position: absolute;
-  display: inline-block;
-  list-style-type: none;
-}
-
-li a {
-  text-decoration: none;
-  color: rgb(26, 22, 22);
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body > * {
@@ -65,6 +60,21 @@ header h1 {
 
 .utility_bar li {
   margin: 0px 14px;
+}
+
+li {
+  float: left;
+}
+
+ul {
+  position: absolute;
+  display: inline-block;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(26, 22, 22);
 }
 
 main {

@@ -1,0 +1,26 @@
+// --------------------common--------------------
+
+$font-family-base: Verdana, Geneva, Tahoma, sans-serif;
+$font-color: rgb(82, 77, 77);
+
+* {
+  font-family: $font-family-base;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body>*{
+    width: 100%;
+}
+// --------------------common--------------------
+
+
+// --------------------navigation--------------------
+$nav-font-color: rgb(26, 22, 22);
+// --------------------navigation--------------------
+
+
+// --------------------header--------------------
+$header-font-color: rgb(26, 22, 22);
+$header-font-deco-color: rgb(71, 173, 182);
+// --------------------header--------------------
