@@ -1,3 +1,6 @@
+@import '../../common/common.scss';
+@import '../variables.scss';
+
 main {
   height: 590px;
 
@@ -6,7 +9,7 @@ main {
     height: 300px;
     margin: 0 auto;
     padding: 150px 0 0;
-    color: $main-font-color;
+    color: map-get($map: $main-color, $key: base);
 
     > p {
       font-size: 80px;

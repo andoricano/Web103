@@ -1,6 +1,16 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 footer {
-  background-color: rgb(1, 1, 49);
-  color: gray;
+  background-color: rgb(0, 9, 103);
+  color: rgb(255, 255, 255);
 }
 footer h1 {
   position: absolute;
@@ -29,12 +39,16 @@ footer .footer_menu_bar {
   bottom: 15px;
 }
 footer .footer_menu_bar a {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+}
+footer .footer_menu_bar a:hover {
+  color: rgb(189, 105, 129);
+  cursor: pointer;
 }
 footer .footer_menu_bar li {
   display: inline-block;
   padding: 0 15px;
-  border-right: 2px solid aliceblue;
+  border-right: 2px solid rgb(193, 215, 248);
 }
 footer .footer_menu_bar li:last-child {
   border-right: none;

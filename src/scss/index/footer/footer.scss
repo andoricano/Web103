@@ -1,6 +1,9 @@
+@import '../../common/common.scss';
+@import '../variables.scss';
+
 footer {
-  background-color: $footer-bg-color;
-  color: $footer-list-font-color;
+  background-color: map-get($map: $footer-color, $key: bg);
+  color: map-get($map: $footer-color, $key: list);
 
   h1 {
     position: absolute;
@@ -32,10 +35,10 @@ footer {
     bottom: 15px;
 
     a {
-      color: $footer-list-font-color;
+      color: map-get($map: $footer-color, $key: list);
 
       &:hover {
-        color: $footer-font-hover-color;
+      color: map-get($map: $footer-color, $key: hover);
         cursor: pointer;
       }
     }
@@ -43,7 +46,7 @@ footer {
     li {
       display: inline-block;
       padding: 0 15px;
-      border-right: 2px solid $footer-bar-color;
+      border-right: 2px solid map-get($map: $footer-color, $key: bar);
 
       &:last-child {
         border-right: none;

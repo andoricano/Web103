@@ -1,3 +1,13 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
 main {
   height: 590px;
 }
@@ -6,7 +16,7 @@ main div {
   height: 300px;
   margin: 0 auto;
   padding: 150px 0 0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 main div > p {
   font-size: 80px;

@@ -1,5 +1,7 @@
 // --------------------main--------------------
-$main-font-color: rgb(255, 255, 255);
+$main-color: (
+    base: rgb(255,255,255)
+);
 // --------------------main--------------------
 
 
@@ -8,9 +10,11 @@ $main-font-color: rgb(255, 255, 255);
 
 
 // --------------------footer--------------------
-$footer-bg-color: rgb(0, 9, 103);
-$footer-bar-color: rgb(193, 215, 248);
-$footer-list-font-color: rgb(255, 255, 255);
-$footer-font-deco-color: rgb(221, 252, 181);
-$footer-font-hover-color: rgb(189, 105, 129);
+$footer-color:(
+    bg: rgb(0, 9, 103),
+    bar: rgb(193, 215, 248),
+    list: rgb(255, 255, 255),
+    deco: rgb(221, 252, 181),
+    hover: rgb(189, 105, 129)
+);
 // --------------------footer--------------------
