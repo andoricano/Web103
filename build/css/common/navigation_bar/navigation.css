@@ -1,6 +1,5 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(82, 77, 77);
   margin: 0 auto;
   padding: 0;
 }
@@ -22,4 +21,6 @@ ul {
 li a {
   text-decoration: none;
   color: rgb(26, 22, 22);
-}/*# sourceMappingURL=navigation.css.map */
+}
+
+/*# sourceMappingURL=navigation.css.map */

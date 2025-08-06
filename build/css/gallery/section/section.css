@@ -8,112 +8,6 @@ body > * {
   width: 100%;
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
-header div {
-  position: relative;
-  width: 1180px;
-  height: 120px;
-}
-
-header h1 {
-  position: absolute;
-  left: 10px;
-  bottom: 15px;
-}
-
-.global_navigation_bar {
-  right: 0px;
-  bottom: 0px;
-  font-size: 20px;
-  padding-right: 16px;
-}
-
-.global_navigation_bar > li {
-  margin: 0px 30px 15px;
-}
-
-.global_navigation_bar > li > a {
-  text-decoration: none;
-  font-weight: 1000;
-  color: rgb(26, 22, 22);
-}
-
-.global_navigation_bar > li > a:hover {
-  color: rgb(71, 173, 182);
-}
-
-.utility_bar {
-  right: 30px;
-  top: 20px;
-  font-size: 11px;
-  margin: 0 auto;
-}
-
-.utility_bar li {
-  margin: 0px 14px;
-}
-
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-ul {
-  position: absolute;
-  display: inline-block;
-  list-style-type: none;
-}
-
-li a {
-  text-decoration: none;
-  color: rgb(26, 22, 22);
-}
-
-header {
-  position: fixed;
-  background: rgba(255, 255, 255, 0.1607843137);
-  border-bottom: 2px solid black;
-  z-index: 1;
-}
-
-header h1 a {
-  text-decoration: none;
-  color: inherit;
-}
-header h1 a:hover, header h1 a:focus, header h1 a:active, header h1 a:visited {
-  text-decoration: none;
-  outline: none;
-  color: inherit;
-}
-
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 section {
   padding: 130px 0 0 0;
   width: 1000px;
@@ -218,4 +112,6 @@ section .article7 p span {
   display: inline;
   font-size: 30px;
   font-weight: 700;
-}/*# sourceMappingURL=gallery.css.map */
+}
+
+/*# sourceMappingURL=section.css.map */
