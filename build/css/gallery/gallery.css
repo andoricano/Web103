@@ -114,6 +114,13 @@ body > * {
   width: 100%;
 }
 
+.p-common, section .article7 p, section .article4 .p2, section .article4 .p1, section .article3 p, section .article2 p, section .article1 p {
+  position: absolute;
+  font-weight: 600;
+  text-align: start;
+  color: #ffffff;
+}
+
 section {
   padding: 130px 0 0 0;
   width: 1000px;
@@ -123,24 +130,13 @@ section article {
   position: relative;
   float: left;
 }
-section article p {
-  position: absolute;
-  color: #ffffff;
-  font-weight: 1000;
-}
-section .article1 {
-  width: 700px;
-  margin-right: 5px;
-}
 section .article1 p {
   right: 10px;
   bottom: 10px;
   font-size: 30px;
 }
 section .article2 {
-  width: 280px;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  margin: 0 0 10px 10px;
 }
 section .article2 p {
   top: 50px;
@@ -148,8 +144,7 @@ section .article2 p {
   font-size: 30px;
 }
 section .article3 {
-  width: 290px;
-  margin: 5px 0 5px 5px;
+  margin: 0 0 10px 10px;
 }
 section .article3 p {
   right: 10px;
@@ -159,39 +154,31 @@ section .article3 p {
 section .article_4_box {
   width: 490px;
   height: 500px;
-  margin-right: 5px;
 }
 section .article4 {
-  width: 490px;
-  height: 240px;
-  margin: 5px 0;
+  margin: 0 0 10px 0;
 }
 section .article4 .p1 {
-  position: absolute;
+  color: black;
   width: 300px;
   top: 160px;
   font-size: 14px;
-  text-align: start;
   margin: 0 95px;
-  font-weight: 600;
 }
 section .article4 .p2 {
-  position: absolute;
   font-size: 30px;
-  text-align: start;
   right: 20px;
   bottom: 30px;
   color: gold;
-  font-weight: 600;
 }
 section .article5 {
-  margin: 5px 0 5px 5px;
+  margin: 0 0 0 10px;
 }
 section .article6 {
   width: 1000px;
   height: 371px;
-  margin: 5px 0;
   background-image: url("/rsc/1000x371.png");
+  margin: 0 0 10px 0;
 }
 section .article6 p {
   display: inline-block;
@@ -204,15 +191,15 @@ section .article6 p {
   text-shadow: 3px 10px 3px black;
 }
 section .article7 {
-  margin: 5px 0 40px 0;
+  margin: 0 0 10px 0;
 }
 section .article7 p {
   width: 450px;
   height: 150px;
   right: 30px;
   bottom: 40px;
-  position: absolute;
   font-size: 20px;
+  font-weight: 100;
 }
 section .article7 p span {
   display: inline;
