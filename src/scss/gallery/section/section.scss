@@ -1,27 +1,29 @@
 @import "../../common/common.scss";
 @import "../variables_gallery.scss";
 
+$base-width:1000px;
+
+.p-common {
+  position: absolute;
+  font-weight: 600;
+  text-align: start;
+  color: map-get($map: $color, $key: section-base);
+}
+
 section {
   padding: 130px 0 0 0;
-  width: 1000px;
+  width: $base-width;
   font-size: 0;
 
   article {
     position: relative;
     float: left;
-
-    p {
-      position: absolute;
-      color: map-get($map: $color, $key: section-base);
-      font-weight: 1000;
-    }
   }
 
+  $article-top-margin:(0 0 10px 10px);
   .article1 {
-    width: 700px;
-    margin-right: 5px;
-
     p {
+      @extend.p-common;
       right: 10px;
       bottom: 10px;
       font-size: 30px;
@@ -29,11 +31,10 @@ section {
   }
 
   .article2 {
-    width: 280px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin: $article-top-margin;
 
     p {
+      @extend.p-common;
       top: 50px;
       left: 10px;
       font-size: 30px;
@@ -41,58 +42,53 @@ section {
   }
 
   .article3 {
-    width: 290px;
-    margin: 5px 0 5px 5px;
+    margin: $article-top-margin;
 
     p {
+      @extend.p-common;
       right: 10px;
       bottom: 20px;
       font-size: 20px;
     }
   }
 
+  $article-mid-left-margin:(0 0 10px 0);
+  $article-mid-right-margin:(0 0 0 10px);
   .article_4_box {
     width: 490px;
     height: 500px;
-    margin-right: 5px;
   }
-
   .article4 {
-    width: 490px;
-    height: 240px;
-    margin: 5px 0;
+    margin:$article-mid-left-margin;
 
     .p1 {
-      position: absolute;
+      @extend .p-common;
+      color: black;
       width: 300px;
       top: 160px;
       font-size: 14px;
-      text-align: start;
       margin: 0 95px;
-      font-weight: 600;
     }
 
     .p2 {
-      position: absolute;
+      @extend .p-common;
       font-size: 30px;
-      text-align: start;
       right: 20px;
       bottom: 30px;
-      color: map-get($map: $color, $key:section-gold );
-      font-weight: 600;
+      color: map-get($map: $color, $key: section-gold);
     }
   }
 
   .article5 {
-    margin: 5px 0 5px 5px;
+    margin: $article-mid-right-margin;
   }
 
+  $article-btm-margin:(0 0 10px 0);
   .article6 {
     width: 1000px;
     height: 371px;
-    margin: 5px 0;
     background-image: url("/rsc/1000x371.png");
-
+    margin:$article-btm-margin;
     p {
       display: inline-block;
       width: 100%;
@@ -106,15 +102,16 @@ section {
   }
 
   .article7 {
-    margin: 5px 0 40px 0;
+    margin:$article-btm-margin;
 
     p {
+      @extend .p-common;
       width: 450px;
       height: 150px;
       right: 30px;
       bottom: 40px;
-      position: absolute;
       font-size: 20px;
+      font-weight: 100;
 
       span {
         display: inline;
