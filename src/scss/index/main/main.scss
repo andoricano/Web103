@@ -1,19 +1,23 @@
 @import '../../common/common.scss';
 @import '../variables.scss';
 
+$main-height:590px;
+$main-div-size:800px;
+$main-div-padding-top:150px;
+$base-margin:(0 auto);
+
 main {
-  height: 590px;
+  height: $main-height;
 
   div {
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 150px 0 0;
+    width: $main-div-size;
+    height: $main-div-size;
+    margin: $base-margin;
+    padding-top: $main-div-padding-top;
     color: map-get($map: $main-color, $key: base);
 
     > p {
       font-size: 80px;
-      margin: 0;
       font-weight: 1000;
 
       ~ p {
