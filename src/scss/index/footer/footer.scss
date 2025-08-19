@@ -1,31 +1,31 @@
-//솔직히 div 안에 p 넣고 할 수 있잖아
-//구조가 이상하다 싶으면 html이라도 수정해서 완성도를 높이자.
+%footer-box {
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 footer {
   background-color: navy;
   color: white;
 
-  h1 {
-    position: absolute;
-    left: 10px;
-    bottom: 15px;
-    margin: 0 auto;
-  }
-
   div {
-    width: 1000px;
-    height: 100px;
+    @extend %footer-box;
     position: relative;
-    margin: 0 auto;
+
+    >h1 {
+      position: absolute;
+      left: 10px;
+      bottom: 15px;
+      margin: 0 auto;
+    }
   }
 
   p {
+    @extend %footer-box;
     display: block;
-    width: 1000px;
-    height: 100px;
-    margin: 0 auto;
     padding: 10px;
     font-size: 11px;
-    box-sizing: border-box;
   }
 
   .footer_menu_bar {
@@ -34,10 +34,10 @@ footer {
     bottom: 15px;
 
     a {
-      color:white;
+      color: white;
 
       &:hover {
-      color: purple;
+        color: purple;
         cursor: pointer;
       }
     }

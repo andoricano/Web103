@@ -9,24 +9,20 @@ section div > p {
   font-size: 20px;
   font-weight: 1000;
 }
-
-article {
+section div > article {
   float: left;
   width: 230px;
 }
-article p:first-of-type {
+section div > article p:first-of-type {
   font-weight: 1000;
 }
-
-article:nth-child(2) {
+section div > article:nth-child(2) {
   margin-right: 53.3333333333px;
 }
-
-article:nth-child(3) {
+section div > article:nth-child(3) {
   margin-right: 53.3333333333px;
 }
-
-article:nth-child(4) {
+section div > article:nth-child(4) {
   margin-right: 53.3333333333px;
 }
 
