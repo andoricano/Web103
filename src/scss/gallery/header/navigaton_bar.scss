@@ -1,8 +1,10 @@
-@import "../../common/common.scss";
 @import "../../common/header/header.scss";
 @import "../../common/navigation_bar/navigation.scss";
-@import "../variables_gallery.scss";
 
+$color :(
+    header-bg:#ffffff29
+);
+//if else로 처리해보자
 header {
     position: fixed;
     background: map-get($map: $color, $key: header-bg);

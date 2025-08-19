@@ -1,4 +1,11 @@
-@import '../common.scss';
+//header, navigation에서 중첩되는게 너무 많음 어떻게 처리할지 간단하게 고민하기
+//그리고 gallery와 index header가 약간 다른데 거기서 if-else를 써야한다.
+$color :(
+  base: rgb(0, 0, 0),
+  nav: rgb(26, 22, 22),
+  header-main: rgb(26, 22, 22),
+  header-deco: rgb(71, 173, 182)
+);
 
 header div {
     position: relative;

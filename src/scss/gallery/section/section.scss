@@ -1,5 +1,5 @@
-@import "../../common/common.scss";
-@import "../variables_gallery.scss";
+//article을 내삽으로 해서 list로 만들어야 함
+//그러려면 p를 어떻게 처리하냐가 관건인데 이 부분은 고민해보기
 
 $base-width:1000px;
 
@@ -7,7 +7,7 @@ $base-width:1000px;
   position: absolute;
   font-weight: 600;
   text-align: start;
-  color: map-get($map: $color, $key: section-base);
+  color: white;
 }
 
 section {
@@ -75,7 +75,7 @@ section {
       font-size: 30px;
       right: 20px;
       bottom: 30px;
-      color: map-get($map: $color, $key: section-gold);
+      color: gold;
     }
   }
 
@@ -96,7 +96,7 @@ section {
       font-size: 50px;
       font-weight: 700;
       margin: 160px auto;
-      color: map-get($map: $color, $key: section-base);
+      color: white;
       text-shadow: 3px 10px 3px black;
     }
   }

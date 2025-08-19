@@ -1,6 +1,3 @@
-@import '../../common/common.scss';
-@import '../variables.scss';
-
 $main-height:590px;
 $main-div-size:800px;
 $main-div-padding-top:150px;
@@ -14,7 +11,7 @@ main {
     height: $main-div-size;
     margin: $base-margin;
     padding-top: $main-div-padding-top;
-    color: map-get($map: $main-color, $key: base);
+    color: white;
 
     > p {
       font-size: 80px;

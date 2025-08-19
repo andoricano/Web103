@@ -1,9 +1,8 @@
-@import '../../common/common.scss';
-@import '../variables.scss';
-
+//솔직히 div 안에 p 넣고 할 수 있잖아
+//구조가 이상하다 싶으면 html이라도 수정해서 완성도를 높이자.
 footer {
-  background-color: map-get($map: $footer-color, $key: bg);
-  color: map-get($map: $footer-color, $key: list);
+  background-color: navy;
+  color: white;
 
   h1 {
     position: absolute;
@@ -35,10 +34,10 @@ footer {
     bottom: 15px;
 
     a {
-      color: map-get($map: $footer-color, $key: list);
+      color:white;
 
       &:hover {
-      color: map-get($map: $footer-color, $key: hover);
+      color: purple;
         cursor: pointer;
       }
     }
@@ -46,7 +45,7 @@ footer {
     li {
       display: inline-block;
       padding: 0 15px;
-      border-right: 2px solid map-get($map: $footer-color, $key: bar);
+      border-right: 2px solid white;
 
       &:last-child {
         border-right: none;

@@ -4,6 +4,7 @@ $article-margin: ($section-width - $article-width * 4) / 3;
 //만약에 (0 26.6),(26.6,26.6),(26.6,26.6),(26.6,0)으로 하고 싶으면...
 //지금처럼 밑에 nth-child로 각각 넣던가 list로 만들어서 for 돌리는 법도 있다.
 //방법이 많아짐 
+//얘는 리스트로 자료구조 만들어서 뽑는게 나을 듯
 
 section {
   div{

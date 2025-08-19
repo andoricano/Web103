@@ -52,16 +52,6 @@ header h1 {
   margin: 0px 14px;
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 li {
   float: left;
 }
@@ -77,16 +67,6 @@ li a {
   color: rgb(26, 22, 22);
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 main {
   height: 590px;
 }
@@ -95,7 +75,7 @@ main div {
   height: 800px;
   margin: 0 auto;
   padding-top: 150px;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 main div > p {
   font-size: 80px;
@@ -137,19 +117,9 @@ article:nth-child(4) {
   margin-right: 53.3333333333px;
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 footer {
-  background-color: rgb(0, 9, 103);
-  color: rgb(255, 255, 255);
+  background-color: navy;
+  color: white;
 }
 footer h1 {
   position: absolute;
@@ -178,16 +148,16 @@ footer .footer_menu_bar {
   bottom: 15px;
 }
 footer .footer_menu_bar a {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 footer .footer_menu_bar a:hover {
-  color: rgb(189, 105, 129);
+  color: purple;
   cursor: pointer;
 }
 footer .footer_menu_bar li {
   display: inline-block;
   padding: 0 15px;
-  border-right: 2px solid rgb(193, 215, 248);
+  border-right: 2px solid white;
 }
 footer .footer_menu_bar li:last-child {
   border-right: none;

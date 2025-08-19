@@ -1,18 +1,8 @@
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body > * {
-  width: 100%;
-}
-
 .p-common, section .article7 p, section .article4 .p2, section .article4 .p1, section .article3 p, section .article2 p, section .article1 p {
   position: absolute;
   font-weight: 600;
   text-align: start;
-  color: #ffffff;
+  color: white;
 }
 
 section {
@@ -81,7 +71,7 @@ section .article6 p {
   font-size: 50px;
   font-weight: 700;
   margin: 160px auto;
-  color: #ffffff;
+  color: white;
   text-shadow: 3px 10px 3px black;
 }
 section .article7 {
