@@ -1,27 +1,29 @@
-@import "../../common/header/header.scss";
-@import "../../common/navigation_bar/navigation.scss";
+@use "../../common/header/header.scss";
+@use "../../common/navigation_bar/navigation.scss";
 
-$color :(
-    header-bg:#ffffff29
-);
-//if else로 처리해보자
 header {
-    position: fixed;
-    background: map-get($map: $color, $key: header-bg);
-    border-bottom: 2px solid black;
-    z-index: 1;
-}
+  width: 100%;
+  position: fixed;
+  background: #ffffff29;
+  border-bottom: 2px solid black;
+  z-index: 1;
 
-header h1 a {
-  text-decoration: none;
-  color: inherit;
+  >div {
+    @extend %header; //이게 되네여;;
+    margin: 0 auto;
 
-  &:hover,
-  &:focus,
-  &:active,
-  &:visited {
-    text-decoration: none;
-    outline: none;
-    color: inherit;
+    >h1 a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        text-decoration: none;
+        outline: none;
+        color: inherit;
+      }
+    }
   }
 }
