@@ -80,7 +80,7 @@ header > div > h1 a:hover, header > div > h1 a:focus, header > div > h1 a:active
   color: inherit;
 }
 
-.p-common, section .article7 p, section .article4 .p2, section .article4 .p1, section .article3 p, section .article2 p, section .article1 p {
+.p-common, section .article7 p, section .article5 p, section .article4 p, section .article3 p, section .article2 p, section .article1 p {
   position: absolute;
   font-weight: 600;
   text-align: start;
@@ -118,27 +118,30 @@ section .article3 p {
   font-size: 20px;
 }
 section .article4 {
-  float: none;
-  width: 500px;
-  margin: 10px 0 10px 0px;
+  margin: 0 0 10px 0;
 }
 section .article4 .p1 {
   color: black;
   width: 300px;
-  top: 160px;
+  left: 100px;
+  bottom: 30px;
   font-size: 14px;
-  margin: 0 95px;
 }
 section .article4 .p2 {
+  color: gold;
   font-size: 30px;
   right: 20px;
   bottom: 30px;
-  color: gold;
 }
 section .article5 {
+  margin: 0 0 0 10px;
   width: 500px;
   float: right;
   margin: 0 0 0 10px;
+}
+section .article5 p {
+  width: 500px;
+  float: right;
 }
 section .article6 {
   width: 1000px;

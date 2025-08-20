@@ -1,4 +1,19 @@
-$base-width:1000px;
+@use "sass:map";
+@use "sass:list";
+
+$base-width: 1000px;
+
+$articles: (
+  (p1: null, p2: null, right: 10px, bottom: 10px, top: null, left: null, width: null, height: null, float: null, margin: null, font-size: 30px, background-image: null, display: null, text-align: null, font-weight: null, color: null, text-shadow: null),
+  
+  (p1: null, p2: null, right: null, bottom: null, top: 50px, left: 10px, width: null, height: null, float: null, margin: 0 0 10px 10px, font-size: 30px, background-image: null, display: null, text-align: null, font-weight: null, color: null, text-shadow: null),
+  
+  (p1: null, p2: null, right: 10px, bottom: 20px, top: null, left: null, width: null, height: null, float: null, margin: 0 0 10px 10px, font-size: 20px, background-image: null, display: null, text-align: null, font-weight: null, color: null, text-shadow: null),
+  
+  (p1: (color: black, width: 300px, left: 100px, bottom: 30px, font-size: 14px), p2: (color: gold, font-size: 30px, right: 20px, bottom: 30px), right: null, bottom: null, top: null, left: null, width: 500px, height: null, float: none, margin: 0 0 10px 0, font-size: null, background-image: null, display: null, text-align: null, font-weight: null, color: null, text-shadow: null),
+  
+  (p1: null, p2: null, right: null, bottom: null, top: null, left: null, width: 500px, height: null, float: right, margin: 0 0 0 10px, font-size: null, background-image: null, display: null, text-align: null, font-weight: null, color: null, text-shadow: null)
+);
 
 .p-common {
   position: absolute;
@@ -17,104 +32,89 @@ section {
     float: left;
   }
 
-  $article-top-margin:(0 0 10px 10px);
-  .article1 {
-    p {
-      @extend.p-common;
-      right: 10px;
-      bottom: 10px;
-      font-size: 30px;
+  $article-top-margin: (
+    0 0 10px 10px
+  );
+
+
+@for $i from 1 through 5 {
+  $article: list.nth($articles, $i);
+
+  .article#{$i} {
+    @if map.get($article, margin) !=null {
+      margin: map.get($article, margin);
+      @debug "null 아닌 변수" + $i; 
     }
-  }
-
-  .article2 {
-    margin: $article-top-margin;
-
-    p {
-      @extend.p-common;
-      top: 50px;
-      left: 10px;
-      font-size: 30px;
-    }
-  }
-
-  .article3 {
-    margin: $article-top-margin;
-
-    p {
-      @extend.p-common;
-      right: 10px;
-      bottom: 20px;
-      font-size: 20px;
-    }
-  }
-
-  $article-mid-left-margin:(0 0 10px 0);
-  $article-mid-right-margin:(0 0 0 10px);
-  .article4 {
-    float: none;
-    width: 500px;
-    margin: 10px 0 10px 0px;
-    
-    .p1 {
-      @extend .p-common;
-      color: black;
-      width: 300px;
-      top: 160px;
-      font-size: 14px;
-      margin: 0 95px;
-    }
-
-    .p2 {
-      @extend .p-common;
-      font-size: 30px;
-      right: 20px;
-      bottom: 30px;
-      color: gold;
-    }
-  }
-
-  .article5 {
-    width: 500px;
-    float: right;
-    margin: $article-mid-right-margin;
-  }
-
-  $article-btm-margin:(0 0 10px 0);
-  .article6 {
-    width: 1000px;
-    height: 371px;
-    background-image: url("../../../../rsc/1000x371.png");
-    margin:$article-btm-margin;
-    p {
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      font-size: 50px;
-      font-weight: 700;
-      margin: 160px auto;
-      color: white;
-      text-shadow: 3px 10px 3px black;
-    }
-  }
-
-  .article7 {
-    margin:$article-btm-margin;
 
     p {
       @extend .p-common;
-      width: 450px;
-      height: 150px;
-      right: 30px;
-      bottom: 40px;
-      font-size: 20px;
-      font-weight: 100;
+    }
 
-      span {
-        display: inline;
-        font-size: 30px;
-        font-weight: 700;
+    @if $i !=4 {
+      p {
+        @each $prop, $value in $article {
+          @if $prop !=margin {
+            #{$prop}: #{$value};
+          }
+        }
+      }
+    }
+
+    @if $i ==5 {
+      @each $prop, $value in $article {
+        #{$prop}: #{$value};
+      }
+    }
+
+    @else {
+      @each $p, $props in $article {
+        @if $p ==p1 or $p ==p2 {
+          .#{$p} {
+            @each $prop, $value in $props {
+              #{$prop}: #{$value};
+            }
+          }
+        }
       }
     }
   }
+}
+
+.article6 {
+  width: 1000px;
+  height: 371px;
+  background-image: url("../../../../rsc/1000x371.png");
+  margin: (0 0 10px 0);
+
+  p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 160px auto;
+    color: white;
+    text-shadow: 3px 10px 3px black;
+  }
+}
+
+.article7 {
+  margin: (0 0 10px 0);
+
+  p {
+    @extend .p-common;
+    width: 450px;
+    height: 150px;
+    right: 30px;
+    bottom: 40px;
+    font-size: 20px;
+    font-weight: 100;
+
+    span {
+      display: inline;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
 }
