@@ -13,41 +13,34 @@ header > div, header {
   width: 1180px;
   height: 120px;
 }
-
 header > div > h1, header > h1 {
   position: absolute;
   left: 10px;
   bottom: 15px;
 }
-
 header .global_navigation_bar {
   right: 0px;
   bottom: 0px;
   font-size: 20px;
   padding-right: 16px;
 }
-
 header .global_navigation_bar > li {
   margin: 0px 30px 15px;
 }
-
 header .global_navigation_bar > li > a {
   text-decoration: none;
   font-weight: 1000;
   color: rgb(26, 22, 22);
 }
-
 header .global_navigation_bar > li > a:hover {
   color: rgb(71, 173, 182);
 }
-
 header > div > .utility_bar, header > .utility_bar {
   right: 30px;
   top: 20px;
   font-size: 11px;
   margin: 0 auto;
 }
-
 header > div > .utility_bar > li, header > .utility_bar > li {
   margin: 0px 14px;
 }
@@ -124,12 +117,10 @@ section .article3 p {
   bottom: 20px;
   font-size: 20px;
 }
-section .article_4_box {
-  width: 490px;
-  height: 500px;
-}
 section .article4 {
-  margin: 0 0 10px 0;
+  float: none;
+  width: 500px;
+  margin: 10px 0 10px 0px;
 }
 section .article4 .p1 {
   color: black;
@@ -145,6 +136,8 @@ section .article4 .p2 {
   color: gold;
 }
 section .article5 {
+  width: 500px;
+  float: right;
   margin: 0 0 0 10px;
 }
 section .article6 {

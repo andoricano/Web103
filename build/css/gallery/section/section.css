@@ -35,12 +35,10 @@ section .article3 p {
   bottom: 20px;
   font-size: 20px;
 }
-section .article_4_box {
-  width: 490px;
-  height: 500px;
-}
 section .article4 {
-  margin: 0 0 10px 0;
+  float: none;
+  width: 500px;
+  margin: 10px 0 10px 0px;
 }
 section .article4 .p1 {
   color: black;
@@ -56,6 +54,8 @@ section .article4 .p2 {
   color: gold;
 }
 section .article5 {
+  width: 500px;
+  float: right;
   margin: 0 0 0 10px;
 }
 section .article6 {
