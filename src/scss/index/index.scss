@@ -1,9 +1,0 @@
-//다음부터 scss 만들 땐 플러그인을 쓰자..
-// sass --watch src/scss:build/css
-
-@use '../common/common.scss';
-@use '../common/header/header';
-@use '../common/navigation_bar/navigation';
-@use 'main/main';
-@use 'section/index_section';
-@use 'footer/footer';

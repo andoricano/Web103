@@ -1,0 +1,66 @@
+@use '../../../scss_module/text/img_content.scss' as ic;
+
+$programmer: '../../../rsc/490x240-1.png';
+$gold: '../../../rsc/490x240-2.png';
+$happy: '../../../rsc/500x490.png';
+$life: '../../../rsc/1000x361.png';
+
+//안에 패턴을 mixin으로 구성할지 말지 반복문을 쓸지 내비둘지 고민해야할 것.
+@mixin article_mid {
+
+    div.happy {
+        width: 500px;
+        height: 490px;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+
+        @include ic.img_content($bg-img: $happy,
+            $title-size: 14px,
+            $title-text-color: #000,
+            $content-text-color: #000);
+    }
+
+    div.programmer {
+        width: 490px;
+        height: 240px;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        @include ic.img_content($bg-img: $programmer,
+            $title-size: 14px,
+            $title-text-color: #000,
+            $title-margin:0 95px,
+            $content-text-color: #000
+            );
+
+        p {
+            width: 300px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+    }
+
+    div.gold {
+        width: 490px;
+        height: 240px;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        @include ic.img_content($bg-img: $gold,
+            $title-size: 30px,
+            $title-text-color: gold);
+
+        p {
+            position: absolute;
+            margin: 0 95px;
+            right: 20px;
+            bottom: 30px;
+        }
+    }
+}

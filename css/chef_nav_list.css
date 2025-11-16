@@ -1,0 +1,22 @@
+nav {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  margin: 0 35px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #333;
+  font-size: 22px;
+}
+nav ul li a:hover {
+  color: #765a9b;
+}/*# sourceMappingURL=chef_nav_list.css.map */

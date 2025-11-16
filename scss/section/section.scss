@@ -1,0 +1,29 @@
+@use "sass:math";
+@use './article-title-content.scss' as tBox;
+
+$article-margin: math.div(1080px - 230px * 4, 3);
+
+//구현할 section과 article은 거의 붙어있기 때문에 계층을 미세하게만 적용
+section {
+    position: relative;
+    width: 1080px;
+    height: 450px;
+
+    >p {
+        margin: 40px auto;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 1000;
+    }
+
+
+    article {
+        @include tBox.article-title-content();
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i+1}) { 
+                margin-right: $article-margin;
+            }
+        }
+    }
+}

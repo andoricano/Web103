@@ -1,0 +1,20 @@
+@use './articles/article_top.scss' as a_top;
+@use './articles/article_mid.scss' as a_mid;
+@use './articles/article_btm.scss' as a_btm;
+
+section {
+  padding: 130px 10px 10px 10px;
+  width: 1000px;
+  font-size: 0;
+  overflow: hidden;
+
+  article>div {
+    position: relative;
+    float: left;
+  }
+
+  @include a_top.article_top;
+  @include a_mid.article_mid;
+  @include a_btm.article_btm;
+
+}

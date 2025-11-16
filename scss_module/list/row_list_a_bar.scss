@@ -1,0 +1,30 @@
+@use "sass:map";
+
+//nav bar나 utility bar를 만들 때 사용하기 좋은 mixin.
+@mixin row_list_a_bar(
+  $li-margin: 0 30px 15px,
+  $a-color: #000,
+  $a-hover-color: #f00,
+  $font-size: 20px 
+) {
+  ul {
+    display: inline-block;
+    list-style-type: none;
+
+    li {
+      float: left;
+      margin: $li-margin;
+
+      a {
+        text-decoration: none;
+        font-weight: 1000;
+        color: $a-color;
+        font-size: $font-size;
+
+        &:hover {
+          color: $a-hover-color;
+        }
+      }
+    }
+  }
+}

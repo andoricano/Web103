@@ -1,0 +1,370 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header_layout {
+  margin: 0 auto;
+  position: relative;
+  width: 1180px;
+}
+
+header {
+  width: 1180px;
+  height: 120px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1607843137);
+  border-bottom: 2px solid black;
+  z-index: 1;
+}
+header > h1 a {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+header > h1 a:hover, header > h1 a:focus, header > h1 a:active, header > h1 a:visited {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  margin: 0 35px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #333;
+  font-size: 22px;
+}
+nav ul li a:hover {
+  color: #765a9b;
+}
+
+.util_list {
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.util_list ul {
+  display: inline-block;
+  list-style-type: none;
+}
+.util_list ul li {
+  float: left;
+  margin: 0 14px;
+}
+.util_list ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #ab8c8c;
+  font-size: 11px;
+}
+.util_list ul li a:hover {
+  color: #ad9cc3;
+}
+
+section {
+  padding: 130px 10px 10px 10px;
+  width: 1000px;
+  font-size: 0;
+  overflow: hidden;
+}
+section article > div {
+  position: relative;
+  float: left;
+}
+section div.christmas {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  background-image: url(../../../rsc/700x400.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.christmas > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 1000;
+}
+section div.christmas > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.christmas p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+section div.frozen {
+  width: 290px;
+  height: 190px;
+  position: relative;
+  margin-left: 10px;
+  background-image: url(../../../rsc/290x190.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.frozen > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 1000;
+}
+section div.frozen > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.frozen p {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+section div.present {
+  width: 290px;
+  height: 95px;
+  position: relative;
+  margin: 10px 0 0 10px;
+  background-image: url(../../../rsc/290x95-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.present > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 1000;
+}
+section div.present > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.present p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+section div.good {
+  width: 290px;
+  height: 95px;
+  position: relative;
+  margin: 10px 0 0 10px;
+  background-image: url(../../../rsc/290x95-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.good > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 1000;
+}
+section div.good > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.good p {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+section div.happy {
+  width: 500px;
+  height: 490px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  background-image: url(../../../rsc/500x490.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.happy > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: 1000;
+}
+section div.happy > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.programmer {
+  width: 490px;
+  height: 240px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-image: url(../../../rsc/490x240-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.programmer > p:first-of-type {
+  margin: 0 95px;
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: 1000;
+}
+section div.programmer > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.programmer p {
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+}
+section div.gold {
+  width: 490px;
+  height: 240px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-image: url(../../../rsc/490x240-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.gold > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: gold;
+  font-size: 30px;
+  font-weight: 1000;
+}
+section div.gold > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.gold p {
+  position: absolute;
+  margin: 0 95px;
+  right: 20px;
+  bottom: 30px;
+}
+section div.life {
+  width: 1000px;
+  height: 371px;
+  position: relative;
+  margin: 10px 0;
+  background-image: url(../../../rsc/1000x371.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.life > p:first-of-type {
+  margin: 160px auto;
+  background-color: transparent;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 1000;
+}
+section div.life > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.life p {
+  text-align: center;
+  text-shadow: 3px 10px 3px black;
+}
+section div.nomad {
+  width: 1000px;
+  height: 361px;
+  position: relative;
+  font-size: 16px;
+  background-image: url(../../../rsc/1000x361.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.nomad > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 1000;
+}
+section div.nomad > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div.nomad p {
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+}
+section div.nomad p span {
+  display: inline;
+  font-size: 30px;
+  font-weight: 700;
+}/*# sourceMappingURL=gallery.css.map */
